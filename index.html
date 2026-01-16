@@ -11,44 +11,86 @@
 
 <body>
 
-<header class="topbar">
+<header class="topbar" id="top">
   <div class="container topbar__inner">
-    <div class="brand">
+    <a class="brand" href="#top">
       <div class="brand__mark">OC</div>
       <div>
         <div class="brand__name">Orange Coffee</div>
         <div class="brand__tag">кофейня • кофе с собой</div>
       </div>
-    </div>
+    </a>
 
     <nav class="nav">
       <a href="#branches">Филиалы</a>
       <a href="#menu">Меню</a>
+      <a href="#togo">To-go</a>
+      <a href="#deals">Акции</a>
+      <a href="#lunch">Ланчи</a>
+      <a href="#gallery">Фото</a>
       <a href="#contacts">Карта</a>
     </nav>
   </div>
 </header>
 
 <section class="hero">
-  <div class="container">
-    <h1>Orange Coffee ☕🍊</h1>
-    <p>Быстрый кофе с собой, завтраки и бизнес-ланчи.<br>Две точки в Москве.</p>
-    <a class="btn" href="#contacts">Построить маршрут</a>
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <div class="badge"><span class="dot"></span><span>кофе • завтраки • десерты • to-go</span></div>
+      <h1>Orange Coffee ☕🍊</h1>
+      <p class="lead">Быстрый кофе с собой, завтраки и бизнес-ланчи. Две точки в Москве.</p>
+
+      <div class="actions">
+        <a class="btn" href="#contacts">Построить маршрут</a>
+        <a class="btn btn--ghost" href="#menu">Цены</a>
+      </div>
+
+      <div class="hero__meta">
+        <div class="meta"><span class="meta__k">📍 2 точки</span><span class="meta__v">север Москвы</span></div>
+        <div class="meta"><span class="meta__k">🥡</span><span class="meta__v">to-go / в зале</span></div>
+        <div class="meta"><span class="meta__k">⚡</span><span class="meta__v">быстро и удобно</span></div>
+      </div>
+    </div>
+
+    <div class="hero__card">
+      <div class="hero__cardTop">
+        <div class="hero__miniTitle">Попробуй сегодня</div>
+        <div class="hero__miniText">кофе + выпечка</div>
+      </div>
+      <div class="hero__miniGrid">
+        <div class="mini mini--1" title="Фото 1"></div>
+        <div class="mini mini--2" title="Фото 2"></div>
+        <div class="mini mini--3" title="Фото 3"></div>
+        <div class="mini mini--4" title="Фото 4"></div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="section" id="branches">
   <div class="container">
-    <h2>Филиалы</h2>
+    <div class="section__head">
+      <h2>Филиалы</h2>
+      <p>Выберите ближайшую точку</p>
+    </div>
 
     <div class="grid-2">
-      <div class="card accent">
-        <h3>Валдайский проезд, 8</h3>
-        <p>Ежедневно 08:00–20:00</p>
+      <div class="card accent branch-card">
+        <div class="branch-photo branch-photo--1" aria-label="Фото филиала 1"></div>
+        <div class="branch-body">
+          <h3>Валдайский проезд, 8</h3>
+          <p class="muted">Ежедневно 08:00–20:00</p>
+          <a class="btn" target="_blank" rel="noopener" href="https://yandex.ru/maps/org/orange_coffee/242265181023/">Открыть в Яндекс Картах</a>
+        </div>
       </div>
-      <div class="card">
-        <h3>Беломорская ул., 26с2</h3>
-        <p>1 этаж · до 20:00</p>
+
+      <div class="card branch-card">
+        <div class="branch-photo branch-photo--2" aria-label="Фото филиала 2"></div>
+        <div class="branch-body">
+          <h3>Беломорская ул., 26с2</h3>
+          <p class="muted">1 этаж · до 20:00</p>
+          <a class="btn btn--ghost" target="_blank" rel="noopener" href="https://yandex.ru/maps/org/orange_coffee/36567069709/">Открыть в Яндекс Картах</a>
+        </div>
       </div>
     </div>
   </div>
@@ -56,108 +98,244 @@
 
 <section class="section" id="menu">
   <div class="container">
-    <h2>Меню и цены</h2>
+    <div class="section__head">
+      <h2>Меню и цены</h2>
+      <p>Популярные позиции</p>
+    </div>
 
     <div class="grid-3">
       <div class="card">
         <h3>Кофе</h3>
-        <ul>
-          <li>Эспрессо — 140 ₽</li>
-          <li>Американо — 140 ₽</li>
-          <li>Капучино — 210 ₽</li>
-          <li>Латте — 210 ₽</li>
-          <li>Флэт уайт — 210 ₽</li>
-          <li>Раф — 330 ₽</li>
+        <ul class="list">
+          <li><span>Эспрессо</span><span>140 ₽</span></li>
+          <li><span>Американо</span><span>140 ₽</span></li>
+          <li><span>Капучино</span><span>210 ₽</span></li>
+          <li><span>Латте</span><span>210 ₽</span></li>
+          <li><span>Флэт уайт</span><span>210 ₽</span></li>
+          <li><span>Раф</span><span>330 ₽</span></li>
         </ul>
       </div>
 
       <div class="card">
         <h3>Авторские</h3>
-        <ul>
-          <li>Латте «Сникерс» — 340 ₽</li>
-          <li>Латте «Лаванда» — 350 ₽</li>
-          <li>Горячий апельсин — 280 ₽</li>
+        <ul class="list">
+          <li><span>Латте «Сникерс»</span><span>340 ₽</span></li>
+          <li><span>Латте «Лаванда»</span><span>350 ₽</span></li>
+          <li><span>Горячий апельсин</span><span>280 ₽</span></li>
         </ul>
       </div>
 
       <div class="card">
         <h3>Формат</h3>
-        <ul>
-          <li>☕ кофе с собой</li>
-          <li>🥐 завтраки</li>
-          <li>🍽 бизнес-ланчи</li>
+        <ul class="ticks">
+          <li>кофе с собой</li>
+          <li>завтраки</li>
+          <li>бизнес-ланчи</li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="togo">
+  <div class="container">
+    <div class="section__head">
+      <h2>Кофе с собой</h2>
+      <p>Быстро по дороге — без лишних ожиданий</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <ul class="ticks">
+          <li>быстрая выдача</li>
+          <li>удобно “to-go”</li>
+          <li>десерт к кофе</li>
+        </ul>
+      </div>
+      <div class="card accent">
+        <h3>Совет</h3>
+        <p class="muted">Поставь рядом с кассой “хит дня” и вынеси его в “Акции” — это хорошо конвертит.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="deals">
+  <div class="container">
+    <div class="section__head">
+      <h2>Акции</h2>
+      <p>Коротко и понятно — чтобы обновлять за минуту</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="deal"><div class="pill">🔥 Комбо</div><h3>Кофе + десерт</h3><p class="muted">уточняйте на месте</p></div>
+      <div class="deal"><div class="pill">⏰ Утро</div><h3>Утренний набор</h3><p class="muted">до 12:00</p></div>
+      <div class="deal"><div class="pill">🥡 To-go</div><h3>Быстро с собой</h3><p class="muted">без ожидания</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="lunch">
+  <div class="container">
+    <div class="section__head">
+      <h2>Бизнес-ланчи</h2>
+      <p>Сытный обед в понятном формате</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <ul class="ticks">
+          <li>основное блюдо</li>
+          <li>гарнир / салат</li>
+          <li>напиток</li>
+        </ul>
+      </div>
+      <div class="card accent">
+        <h3>Для офисов рядом</h3>
+        <p class="muted">Можно зайти быстро или спокойно поесть 20–30 минут.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section__head">
+      <h2>Фото</h2>
+      <p>Подставь свои фото в /img — и сайт сразу “дорогой”</p>
+    </div>
+
+    <div class="gallery">
+      <div class="ph ph--1" aria-label="Фото 1"></div>
+      <div class="ph ph--2" aria-label="Фото 2"></div>
+      <div class="ph ph--3" aria-label="Фото 3"></div>
+      <div class="ph ph--4" aria-label="Фото 4"></div>
     </div>
   </div>
 </section>
 
 <section class="section" id="contacts">
   <div class="container">
-    <h2>Карта и маршрут</h2>
+    <div class="section__head">
+      <h2>Карта и маршрут</h2>
+      <p>Выберите филиал — карта переключится</p>
+    </div>
 
     <div class="grid-2">
       <div class="card">
         <h3>Выберите филиал</h3>
 
-        <button class="branch-btn active" data-branch="valday">Валдайский пр., 8</button>
-        <button class="branch-btn" data-branch="belom">Беломорская, 26с2</button>
+        <div class="branch-switch" role="tablist" aria-label="Переключатель филиалов">
+          <button class="branch-btn is-active" type="button" data-branch="valday" role="tab" aria-selected="true">
+            Валдайский пр., 8
+            <span class="branch-sub">08:00–20:00</span>
+          </button>
 
-        <p id="addr">Москва, Валдайский проезд, 8</p>
+          <button class="branch-btn" type="button" data-branch="belom" role="tab" aria-selected="false">
+            Беломорская, 26с2
+            <span class="branch-sub">до 20:00</span>
+          </button>
+        </div>
 
-        <a id="routeBtn" class="btn" target="_blank"
-           href="https://yandex.ru/maps/org/orange_coffee/242265181023/">
-           Построить маршрут
-        </a>
+        <div class="contact" style="margin-top:14px;">
+          <div class="contact__row">
+            <span class="contact__k">📍 Адрес</span>
+            <span class="contact__v" id="addrText">Москва, Валдайский проезд, 8 (1 этаж)</span>
+          </div>
+          <div class="contact__row">
+            <span class="contact__k">🕘 Часы</span>
+            <span class="contact__v" id="hoursText">Ежедневно 08:00–20:00</span>
+          </div>
+        </div>
+
+        <div class="actions" style="margin-top:14px;">
+          <a class="btn" id="routeBtn" target="_blank" rel="noopener"
+             href="https://yandex.ru/maps/org/orange_coffee/242265181023/?ll=37.469247%2C55.866019&z=17">
+            Построить маршрут
+          </a>
+          <a class="btn btn--ghost" id="cardBtn" target="_blank" rel="noopener"
+             href="https://yandex.ru/maps/org/orange_coffee/242265181023/">
+            Открыть карточку
+          </a>
+        </div>
       </div>
 
-      <div class="card">
-        <iframe id="map"
-          src="https://yandex.ru/map-widget/v1/org/242265181023/"
-          loading="lazy"></iframe>
+      <div class="card card--map">
+        <h3 id="mapTitle">Мы на карте — Валдайский пр., 8</h3>
+        <div class="map">
+          <iframe
+            id="mapFrame"
+            title="Orange Coffee на карте"
+            src="https://yandex.ru/map-widget/v1/org/242265181023/?ll=37.469247%2C55.866019&z=17"
+            frameborder="0"
+            allowfullscreen="true"></iframe>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <footer class="footer">
-  <div class="container">
-    © <span id="year"></span> Orange Coffee
+  <div class="container footer__inner">
+    <div class="muted">© <span id="year"></span> Orange Coffee</div>
+    <div class="footer__links">
+      <a href="#menu">Меню</a>
+      <a href="#gallery">Фото</a>
+      <a href="#contacts">Карта</a>
+    </div>
   </div>
 </footer>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  const branches = {
-    valday: {
-      addr: "Москва, Валдайский проезд, 8",
-      map: "https://yandex.ru/map-widget/v1/org/242265181023/",
-      route: "https://yandex.ru/maps/org/orange_coffee/242265181023/"
-    },
-    belom: {
-      addr: "Москва, Беломорская улица, 26с2",
-      map: "https://yandex.ru/map-widget/v1/org/36567069709/",
-      route: "https://yandex.ru/maps/org/orange_coffee/36567069709/"
-    }
-  };
-
-  const buttons = document.querySelectorAll(".branch-btn");
-  const addr = document.getElementById("addr");
-  const map = document.getElementById("map");
-  const routeBtn = document.getElementById("routeBtn");
-
-  buttons.forEach(btn => {
-    btn.onclick = () => {
-      buttons.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-
-      const b = branches[btn.dataset.branch];
-      addr.textContent = b.addr;
-      map.src = b.map;
-      routeBtn.href = b.route;
+  (function () {
+    const branches = {
+      valday: {
+        title: "Мы на карте — Валдайский пр., 8",
+        addr: "Москва, Валдайский проезд, 8 (1 этаж)",
+        hours: "Ежедневно 08:00–20:00",
+        cardUrl: "https://yandex.ru/maps/org/orange_coffee/242265181023/",
+        routeUrl: "https://yandex.ru/maps/org/orange_coffee/242265181023/?ll=37.469247%2C55.866019&z=17",
+        iframeSrc: "https://yandex.ru/map-widget/v1/org/242265181023/?ll=37.469247%2C55.866019&z=17"
+      },
+      belom: {
+        title: "Мы на карте — Беломорская, 26с2",
+        addr: "Москва, Беломорская улица, 26с2 (1 этаж)",
+        hours: "До 20:00 (уточняйте актуальный график в карточке)",
+        cardUrl: "https://yandex.ru/maps/org/orange_coffee/36567069709/",
+        routeUrl: "https://yandex.ru/maps/org/orange_coffee/36567069709/",
+        iframeSrc: "https://yandex.ru/map-widget/v1/org/36567069709/"
+      }
     };
-  });
+
+    const mapTitle = document.getElementById("mapTitle");
+    const mapFrame = document.getElementById("mapFrame");
+    const addrText = document.getElementById("addrText");
+    const hoursText = document.getElementById("hoursText");
+    const routeBtn = document.getElementById("routeBtn");
+    const cardBtn = document.getElementById("cardBtn");
+    const buttons = document.querySelectorAll(".branch-btn");
+
+    function setActive(branchKey) {
+      const b = branches[branchKey];
+      if (!b) return;
+
+      mapTitle.textContent = b.title;
+      addrText.textContent = b.addr;
+      hoursText.textContent = b.hours;
+      routeBtn.href = b.routeUrl;
+      cardBtn.href = b.cardUrl;
+      mapFrame.src = b.iframeSrc;
+
+      buttons.forEach(btn => {
+        const isActive = btn.dataset.branch === branchKey;
+        btn.classList.toggle("is-active", isActive);
+        btn.setAttribute("aria-selected", isActive ? "true" : "false");
+      });
+    }
+
+    buttons.forEach(btn => btn.addEventListener("click", () => setActive(btn.dataset.branch)));
+    setActive("valday");
+  })();
 </script>
 
 </body>
