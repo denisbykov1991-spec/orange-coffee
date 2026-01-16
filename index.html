@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orange Coffee — кафе</title>
+  <meta name="description" content="Orange Coffee — кофе, завтраки, десерты. Кофе с собой, акции, бизнес-ланчи. Уютное кафе рядом с домом." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="topbar" id="top">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Orange Coffee">
+        <span class="brand__mark">OC</span>
+        <span class="brand__text">
+          <span class="brand__name">Orange Coffee</span>
+          <span class="brand__tag">кафе • кофе • завтраки</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Навигация">
+        <a href="#menu">Меню</a>
+        <a href="#togo">Кофе с собой</a>
+        <a href="#deals">Акции</a>
+        <a href="#lunch">Бизнес-ланчи</a>
+        <a href="#gallery">Фото</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <a class="btn btn--ghost" href="https://yandex.ru/maps/org/orange_coffee/242265181023/" target="_blank" rel="noopener">
+          Открыть в Яндекс Картах
+        </a>
+        <a class="btn" href="#contacts">Как найти</a>
+      </div>
+
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" data-mobile-nav>
+      <a href="#menu">Меню</a>
+      <a href="#togo">Кофе с собой</a>
+      <a href="#deals">Акции</a>
+      <a href="#lunch">Бизнес-ланчи</a>
+      <a href="#gallery">Фото</a>
+      <a href="#contacts">Контакты</a>
+      <a class="btn btn--ghost" href="https://yandex.ru/maps/org/orange_coffee/242265181023/" target="_blank" rel="noopener">
+        Открыть в Яндекс Картах
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="badge">
+          <span class="dot"></span>
+          <span>Кофе • завтраки • десерты</span>
+        </div>
+
+        <h1>Orange Coffee — место, куда хочется заглядывать каждый день ☕🍊</h1>
+        <p class="lead">
+          Свежесваренный кофе, тёплая атмосфера и быстрый формат «кофе с собой».
+          Загляните на завтрак, десерт или бизнес-ланч — мы рядом.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn" href="#togo">Кофе с собой</a>
+          <a class="btn btn--ghost" href="#deals">Смотреть акции</a>
+          <a class="btn btn--ghost" href="#contacts">Маршрут</a>
+        </div>
+
+        <div class="hero__meta">
+          <div class="meta">
+            <span class="meta__k">📍 Локация</span>
+            <span class="meta__v">Москва, Северное Тушино</span>
+          </div>
+          <div class="meta">
+            <span class="meta__k">🕘 Время</span>
+            <span class="meta__v">Ежедневно (уточняйте актуальный график)</span>
+          </div>
+          <div class="meta">
+            <span class="meta__k">🥡 Формат</span>
+            <span class="meta__v">В зале и навынос</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__card">
+          <div class="hero__img" role="img" aria-label="Orange Coffee"></div>
+          <div class="hero__card-body">
+            <div class="hero__card-title">Горячий кофе + десерт</div>
+            <div class="hero__card-sub">Идеально для короткой паузы</div>
+          </div>
+        </div>
+
+        <div class="kpis">
+          <div class="kpi">
+            <div class="kpi__n">☕</div>
+            <div class="kpi__t">Стабильный вкус</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi__n">🥐</div>
+            <div class="kpi__t">Завтраки и выпечка</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi__n">⚡</div>
+            <div class="kpi__t">Быстро «to-go»</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section__head">
+        <h2>Меню</h2>
+        <p>Подборка популярных позиций. Можно обновлять под реальные названия и цены.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <h3>Кофе</h3>
+          <ul class="list">
+            <li><span>Эспрессо</span><span class="muted">—</span></li>
+            <li><span>Американо</span><span class="muted">—</span></li>
+            <li><span>Капучино</span><span class="muted">—</span></li>
+            <li><span>Латте</span><span class="muted">—</span></li>
+            <li><span>Флэт уайт</span><span class="muted">—</span></li>
+            <li><span>Авторские напитки</span><span class="muted">—</span></li>
+          </ul>
+          <div class="hint">По желанию — альтернативное молоко.</div>
+        </article>
+
+        <article class="card">
+          <h3>Завтраки</h3>
+          <ul class="list">
+            <li><span>Сытный завтрак</span><span class="muted">—</span></li>
+            <li><span>Лёгкий завтрак</span><span class="muted">—</span></li>
+            <li><span>Каша / гранола</span><span class="muted">—</span></li>
+            <li><span>Сэндвичи</span><span class="muted">—</span></li>
+          </ul>
+          <div class="hint">Отлично к утреннему кофе.</div>
+        </article>
+
+        <article class="card">
+          <h3>Десерты</h3>
+          <ul class="list">
+            <li><span>Свежая выпечка</span><span class="muted">—</span></li>
+            <li><span>Торты / пирожные</span><span class="muted">—</span></li>
+            <li><span>Сладкое к кофе</span><span class="muted">—</span></li>
+          </ul>
+          <div class="hint">Спросите бариста, что сегодня “топ”.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coffee to go -->
+  <section class="section section--alt" id="togo">
+    <div class="container">
+      <div class="section__head">
+        <h2>Кофе с собой</h2>
+        <p>Быстро, удобно, вкусно — идеально по дороге.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card card--accent">
+          <h3>To-go формат</h3>
+          <p class="muted">
+            Забегайте за кофе перед делами — мы стараемся готовить быстро и стабильно по вкусу.
+          </p>
+          <ul class="ticks">
+            <li>Быстрая выдача</li>
+            <li>Напитки в дорогу</li>
+            <li>Можно взять десерт/выпечку</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Как заказать</h3>
+          <p class="muted">Самый простой сценарий:</p>
+          <ol class="steps">
+            <li>Выберите напиток и объём</li>
+            <li>Добавьте сироп / молоко по вкусу</li>
+            <li>Заберите заказ и наслаждайтесь ☕</li>
+          </ol>
+          <div class="actions">
+            <a class="btn" href="#contacts">Построить маршрут</a>
+            <a class="btn btn--ghost" href="#deals">Смотреть акции</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals -->
+  <section class="section" id="deals">
+    <div class="container">
+      <div class="section__head">
+        <h2>Акции</h2>
+        <p>Здесь можно держать актуальные предложения (обновляется за 30 секунд).</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="deal">
+          <div class="deal__top">
+            <span class="pill">🔥 Популярное</span>
+            <span class="deal__icon">🍊</span>
+          </div>
+          <h3>Кофе + десерт</h3>
+          <p class="muted">Комбо для короткой паузы. Уточняйте условия у бариста.</p>
+        </article>
+
+        <article class="deal">
+          <div class="deal__top">
+            <span class="pill">⏰ Утро</span>
+            <span class="deal__icon">☕</span>
+          </div>
+          <h3>Завтрак выгоднее</h3>
+          <p class="muted">Утренние наборы с кофе и завтраком (по наличию).</p>
+        </article>
+
+        <article class="deal">
+          <div class="deal__top">
+            <span class="pill">🥡 To-go</span>
+            <span class="deal__icon">⚡</span>
+          </div>
+          <h3>Быстрый формат</h3>
+          <p class="muted">Собираем заказ быстро — удобно по дороге.</p>
+        </article>
+      </div>
+
+      <div class="note">
+        <strong>Лайфхак:</strong> когда появятся точные акции — просто заменишь текст в этих карточках (3 блока).
+      </div>
+    </div>
+  </section>
+
+  <!-- Business lunches -->
+  <section class="section section--alt" id="lunch">
+    <div class="container">
+      <div class="section__head">
+        <h2>Бизнес-ланчи</h2>
+        <p>Сытный обед без лишних ожиданий — для тех, кто ценит время.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <h3>Что обычно входит</h3>
+          <ul class="ticks">
+            <li>Горячее / основное блюдо</li>
+            <li>Гарнир или салат</li>
+            <li>Напиток</li>
+          </ul>
+          <p class="muted">Состав может меняться. Уточняйте варианты на месте.</p>
+        </article>
+
+        <article class="card card--accent">
+          <h3>Для команд и офисов</h3>
+          <p class="muted">
+            Если рядом офис — можно сделать привычный обеденный ритуал.
+            Удобно зайти быстро или задержаться на 20 минут.
+          </p>
+          <div class="actions">
+            <a class="btn" href="#contacts">Как найти</a>
+            <a class="btn btn--ghost" href="https://yandex.ru/maps/org/orange_coffee/242265181023/" target="_blank" rel="noopener">
+              Посмотреть на карте
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section__head">
+        <h2>Фото</h2>
+        <p>Поставь сюда реальные фото из Яндекс/соцсетей — и сайт сразу станет «живым».</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="ph ph--1" aria-label="Фото 1"></figure>
+        <figure class="ph ph--2" aria-label="Фото 2"></figure>
+        <figure class="ph ph--3" aria-label="Фото 3"></figure>
+        <figure class="ph ph--4" aria-label="Фото 4"></figure>
+      </div>
+
+      <div class="hint muted">
+        Сейчас стоят “плейсхолдеры” (градиенты). Когда дашь фото/ссылки — вставим реальные изображения.
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section class="section" id="contacts">
+    <div class="container">
+      <div class="section__head">
+        <h2>Контакты и маршрут</h2>
+        <p>Откройте карту и постройте маршрут до Orange Coffee.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <h3>Как нас найти</h3>
+          <p class="muted">
+            Адрес и точный график лучше подтянуть из карточки организации.
+            Здесь можно оставить короткую подсказку «как пройти».
+          </p>
+
+          <div class="contact">
+            <div class="contact__row">
+              <span class="contact__k">📍 Адрес</span>
+              <span class="contact__v">Москва, Северное Тушино (уточните адрес в карточке)</span>
+            </div>
+            <div class="contact__row">
+              <span class="contact__k">🕘 Часы</span>
+              <span class="contact__v">Ежедневно (уточняйте)</span>
+            </div>
+            <div class="contact__row">
+              <span class="contact__k">📞 Телефон</span>
+              <span class="contact__v"><a href="tel:+70000000000">+7 (000) 000-00-00</a></span>
+            </div>
+          </div>
+
+          <div class="actions">
+            <a class="btn" href="https://yandex.ru/maps/org/orange_coffee/242265181023/?ll=37.469247%2C55.866019&z=17"
+               target="_blank" rel="noopener">
+              Построить маршрут
+            </a>
+            <a class="btn btn--ghost" href="#top">Наверх</a>
+          </div>
+
+          <hr class="hr" />
+
+          <h3>Быстрая заявка</h3>
+          <p class="muted">Мини-форма (можно подключить отправку на почту/в Telegram).</p>
+
+          <form class="form" onsubmit="return false;">
+            <label class="field">
+              <span>Имя</span>
+              <input type="text" name="name" placeholder="Как к вам обращаться" />
+            </label>
+            <label class="field">
+              <span>Телефон</span>
+              <input type="tel" name="phone" placeholder="+7 ..." />
+            </label>
+            <label class="field">
+              <span>Сообщение</span>
+              <textarea name="message" rows="3" placeholder="Например: хочу уточнить бизнес-ланчи"></textarea>
+            </label>
+            <button class="btn" type="submit">Отправить</button>
+            <div class="form__note muted">* Сейчас форма без отправки (подключается за 5 минут).</div>
+          </form>
+        </article>
+
+        <article class="card card--map">
+          <h3>Мы на карте</h3>
+          <div class="map">
+            <iframe
+              title="Orange Coffee на карте"
+              src="https://yandex.ru/map-widget/v1/org/242265181023/?ll=37.469247%2C55.866019&z=17"
+              frameborder="0"
+              allowfullscreen="true">
+            </iframe>
+          </div>
+          <div class="actions">
+            <a class="btn btn--ghost" href="https://yandex.ru/maps/org/orange_coffee/242265181023/" target="_blank" rel="noopener">
+              Открыть в Яндекс Картах
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="brand brand--small">
+          <span class="brand__mark">OC</span>
+          <span class="brand__text">
+            <span class="brand__name">Orange Coffee</span>
+            <span class="brand__tag">кофе • завтраки • десерты</span>
+          </span>
+        </div>
+        <div class="muted">© <span id="year"></span> Orange Coffee. Все права защищены.</div>
+      </div>
+
+      <div class="footer__right">
+        <a class="muted" href="#menu">Меню</a>
+        <a class="muted" href="#deals">Акции</a>
+        <a class="muted" href="#contacts">Контакты</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile nav
+    const burger = document.querySelector('[data-burger]');
+    const mobileNav = document.querySelector('[data-mobile-nav]');
+    if (burger && mobileNav) {
+      burger.addEventListener('click', () => {
+        const isOpen = mobileNav.classList.toggle('is-open');
+        burger.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      mobileNav.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          mobileNav.classList.remove('is-open');
+          burger.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
